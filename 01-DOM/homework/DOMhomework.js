@@ -69,7 +69,7 @@ function buildToDo(todo, index) { //el parametro todo = {description: 'leer', co
     toDoText.className = 'completeText';//toDoText.setAttribute('class', 'completeText');
     
   }
-  toDoShell.appendChild(check);
+  // toDoShell.appendChild(check);
   toDoShell.appendChild(toDoText);
   toDoText.addEventListener('click', completeToDo);
  
@@ -151,11 +151,13 @@ function addToDo() {
 let button = document.querySelector('#addButton');
 button.addEventListener('click', addToDo);
 //para que si apreto enter haga lo mismo;
-document.querySelector('#toDoImput').addEventListener('keypress', function(event){
-  if (event.keyCode === 13) {
-    addToDo();
-  }
-})
+// document
+//   .querySelector('#toDoInput')
+//   .addEventListener('keypress', function(event){
+//     if (event.keyCode === 13) {
+//       addToDo();
+//     }
+//   })
 
 
 // La función completeToDo se va a ejecutar cuando queramos completar un todo
